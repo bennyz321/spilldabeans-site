@@ -1,0 +1,14 @@
+title: Spill Da Beans
+description: Spill Da Beans is coming soon
+url: https://spilldabeans.com
+baseurl: ""
+
+theme: minima
+markdown: kramdown
+permalink: /:basename/
+
+# No nav links: _includes/header.html shows the site title only.
+
+exclude:
+  - README.md
+  - .jekyll-cache
