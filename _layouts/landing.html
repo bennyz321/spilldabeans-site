@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>{{ site.title | escape }}</title>
+  <meta name="description" content="{{ site.description | escape }}">
+  <meta property="og:title" content="{{ site.title | escape }}">
+  <meta property="og:description" content="{{ site.description | escape }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <meta name="theme-color" content="#FFF9F1">
+  <link rel="preload" href="{{ "/assets/fonts/Nunito-Black.ttf" | relative_url }}" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="{{ "/assets/css/landing.css" | relative_url }}">
+</head>
+<body class="landing">
+  <div class="blobs" aria-hidden="true">
+    <span class="blob blob--pink"></span>
+    <span class="blob blob--butter"></span>
+    <span class="blob blob--mint"></span>
+  </div>
+
+  <main class="hero">
+    <h1 class="hero__title">
+      <img class="hero__wordmark" src="{{ "/assets/img/wordmark.png" | relative_url }}" width="760" height="760" alt="{{ site.title | escape }}">
+    </h1>
+    <p class="hero__tagline">{{ site.description | escape }}</p>
+
+    <div class="hero__cta">
+      {% if site.app_store_live %}
+      <a class="cta cta--live" href="{{ site.app_store_url }}">Download on the App Store</a>
+      {% else %}
+      <p class="cta cta--soon">Coming soon to the App Store</p>
+      {% endif %}
+    </div>
+
+    <div class="beans" aria-hidden="true">
+      <img class="bean bean--blue" src="{{ "/assets/img/bean-blue.png" | relative_url }}" width="808" height="808" alt="">
+      <img class="bean bean--orange" src="{{ "/assets/img/bean-orange.png" | relative_url }}" width="802" height="802" alt="">
+      <img class="bean bean--pink" src="{{ "/assets/img/bean-pink.png" | relative_url }}" width="880" height="880" alt="">
+    </div>
+  </main>
+
+  <footer class="site-foot">
+    <nav class="site-foot__links" aria-label="Footer">
+      <a href="{{ "/privacy/" | relative_url }}">Privacy</a>
+      <a href="{{ "/terms/" | relative_url }}">Terms</a>
+      <a href="{{ "/support/" | relative_url }}">Support</a>
+    </nav>
+  </footer>
+</body>
+</html>
