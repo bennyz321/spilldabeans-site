@@ -4,7 +4,7 @@ GitHub Pages site for https://spilldabeans.com (custom domain). /join/ is the in
 
 ## Home page art (assets/img)
 
-Resized copies of the app's own art (no new art). Source: breadcrumb-ios commit 0aba4834 (build 470), `Breadcrumb/Assets.xcassets`. Each file was resized with `sips -Z <px>` (keeps alpha, aspect 1:1) to about 2x its largest displayed CSS width, then re-saved losslessly with Pillow (`optimize=True`).
+Resized copies of the app's own art (no new art). Source: the iOS app repo at commit 0aba4834 (build 470), the app target's `Assets.xcassets`. Each file was resized with `sips -Z <px>` (keeps alpha, aspect 1:1) to about 2x its largest displayed CSS width, then re-saved losslessly with Pillow (`optimize=True`).
 
 | Site file | App source | Source sha256 | Size |
 |---|---|---|---|
@@ -13,4 +13,4 @@ Resized copies of the app's own art (no new art). Source: breadcrumb-ios commit 
 | bean-pink.png | welcome-bean-cherry.imageset/01-pink-dance-01.png | 0f05cad3ec3ba65f7086e13c615c2b6b64c2c8dfa6f137b31ac786b0b8df1e78 | 1024 -> 880 px |
 | wordmark.png | welcome-wordmark.imageset/spill-da-beans-logo.png | 23fc584c84963965af57ccb2ac3e77fd50a338e114adae6695fcb701a22c1cd9 | 1254 -> 760 px |
 
-Fonts in assets/fonts are unmodified copies of the app's `Breadcrumb/Resources/Fonts` files (see assets/fonts/OFL.txt).
+Fonts in assets/fonts are unmodified copies of the app target's `Resources/Fonts` files (see assets/fonts/OFL.txt).
