@@ -61,6 +61,7 @@ html { -webkit-text-size-adjust: 100%; overflow-x: hidden; }
 body.landing {
   margin: 0;
   min-height: 100vh;
+  min-height: 100dvh; /* phones: the visible viewport, so the footer line (and the beans above it) sit at the real bottom */
   display: flex;
   flex-direction: column;
   position: relative;
@@ -210,11 +211,12 @@ body.landing {
   text-underline-offset: 4px;
 }
 
-/* Phones: centre the stack so spare height is shared above the wordmark and below the beans,
-   instead of opening one big gap between the CTA and the trio. */
+/* Phones (Ben, 2026-10-07): beans pinned to the bottom of the screen, standing just above the
+   footer line; spare height opens up BETWEEN the CTA and the trio. On short screens the CTA's
+   bottom margin is the minimum gap, and the page scrolls rather than letting the beans overlap it. */
 @media (max-width: 899px) {
-  .hero { justify-content: center; }
-  .hero__cta { margin-bottom: var(--space-md); }
+  .hero__cta { margin-bottom: var(--space-xl); }
+  .beans { margin-top: auto; }
 }
 
 @media (min-width: 900px) {
