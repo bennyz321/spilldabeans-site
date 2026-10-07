@@ -7,6 +7,11 @@ theme: minima
 markdown: kramdown
 permalink: /:basename/
 
+# App Store CTA on the home page. While false the page shows a non-link
+# "Coming soon to the App Store"; set true once the app is live.
+app_store_live: false
+app_store_url: https://apps.apple.com/app/id6768511269
+
 # No nav links: _includes/header.html shows the site title only.
 
 exclude:

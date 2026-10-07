@@ -1,0 +1,208 @@
+/*
+ * Spill Da Beans home page.
+ * Tokens mirror the iOS app design system as shipped in build 470:
+ *   colours  -> OCColor.swift / OCTheme.swift (Figma redesign 2026-10-01)
+ *   type     -> OCFont.swift / OCType (Nunito 900 headings, Inter body/UI)
+ *   radii    -> OCRadius (pill 999), OCCardBackground (16)
+ * Fonts are the app's bundled OFL files, served unmodified (see /assets/fonts/OFL.txt).
+ */
+
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/Nunito-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* OCColor */
+  --ink: #231833;
+  --secondary: #665B72;
+  --dark-button: #21172E;
+  --cream-mist: #FFF9F1;   /* OCSurface.primary / .welcome */
+  --cream-deep: #FFF3E5;
+  --hot-pink: #E94E8C;     /* text/icon accent only, never a fill */
+  --bubblegum: #FF6FA7;    /* OCAccent.primary */
+  --tint-pink: #FFD7E8;
+  --tint-butter: #FFE7A0;
+  --tint-mint-mid: #CFF4DB;
+  --hairline: #EADFEB;
+
+  /* OCRadius */
+  --radius-md: 12px;
+  --radius-card: 16px;
+  --radius-pill: 999px;
+
+  /* OCSpacing */
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-lg: 16px;
+  --space-xl: 24px;
+  --space-xxl: 32px;
+
+  --font-display: "Nunito", ui-rounded, "SF Pro Rounded", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; overflow-x: hidden; }
+
+body.landing {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow-x: hidden;
+  background: var(--cream-mist);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+/* Background blobs: the welcome screen's tintPink / tintButter / tintMintMid circles. */
+.blobs {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.blob {
+  position: absolute;
+  border-radius: 50%;
+}
+.blob--pink   { background: var(--tint-pink);     opacity: .72; width: 45vw; height: 45vw; left: -12vw; top: 68px;  max-width: 420px; max-height: 420px; }
+.blob--butter { background: var(--tint-butter);   opacity: .60; width: 35vw; height: 35vw; right: -10vw; top: -42px; max-width: 320px; max-height: 320px; }
+.blob--mint   { background: var(--tint-mint-mid); opacity: .80; width: 28vw; height: 28vw; right: -6vw; top: 34vw; max-width: 260px; max-height: 260px; }
+
+.hero {
+  position: relative;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: var(--space-xl) var(--space-xl) 0;
+  overflow: hidden; /* the outer beans hang off the edges, as on the welcome screen; clip, never scroll sideways */
+}
+
+/* The wordmark PNG has transparent margins; pull them in so the lettering sits snug. */
+.hero__title {
+  --wm: clamp(240px, 70vw, 380px);
+  width: var(--wm);
+  margin: calc(var(--wm) * -0.12) 0 calc(var(--wm) * -0.12);
+  line-height: 0;
+}
+.hero__wordmark {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero__tagline {
+  max-width: 17em;
+  margin: var(--space-lg) 0 0;
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: clamp(26px, 7vw, 40px);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+
+.hero__cta {
+  margin: var(--space-xl) 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Button: Inter 800 18 (OCType.button), capsule (OCRadius.pill), 50pt tall like the app's pills. */
+.cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  margin: 0;
+  padding: 0 var(--space-xl);
+  border-radius: var(--radius-pill);
+  font-family: var(--font-body);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.cta--live {
+  background: var(--dark-button);
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(35, 24, 51, .10); /* OCElevation.float */
+}
+.cta--live:hover { background: var(--ink); }
+.cta--live:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; } /* ink ring: bubblegum on cream is ~2.4:1, under the 3:1 non-text minimum */
+.cta--soon {
+  background: #fff;
+  color: var(--ink);
+  border: 1px solid var(--hairline);
+}
+
+/* Bean trio: offsets and sizes from the welcome screen's 393pt frame. */
+.beans {
+  position: relative;
+  width: min(100vw, 560px);
+  aspect-ratio: 393 / 268;
+  /* Any spare viewport height goes above the trio, so the beans always stand on the footer edge. */
+  margin-top: auto;
+}
+.bean {
+  position: absolute;
+  height: auto;
+}
+.bean--blue   { left: -21.9%; top: 4.1%; width: 65.1%; }
+.bean--orange { left: 59.8%;  top: 1.0%; width: 64.6%; }
+.bean--pink   { left: 15.5%;  top: 0;    width: 71.0%; }
+
+.site-foot {
+  position: relative;
+  background: #fff;
+  border-top: 1px solid var(--hairline);
+  padding: var(--space-xl) var(--space-xl) calc(var(--space-xl) + env(safe-area-inset-bottom));
+}
+.site-foot__links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-sm) var(--space-xxl);
+}
+.site-foot__links a {
+  color: var(--secondary);
+  font-weight: 800;
+  font-size: 14px;
+  text-decoration: none;
+  padding: var(--space-sm) 0;
+}
+.site-foot__links a:hover,
+.site-foot__links a:focus-visible {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--hot-pink);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+@media (min-width: 900px) {
+  .hero { padding-top: var(--space-xxl); }
+  .beans { width: 620px; }
+  .blob--mint { top: 220px; }
+}
