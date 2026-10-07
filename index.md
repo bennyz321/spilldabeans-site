@@ -8,7 +8,7 @@ Spill Da Beans is the app for sharing the places you love with the people you tr
 
 The app is not available to download yet.
 
-- [Privacy Policy](https://bennyz321.github.io/breadcrumb-docs/privacy/)
-- [Terms of Service](https://bennyz321.github.io/breadcrumb-docs/tos/)
+- [Privacy Policy](/privacy/)
+- [Terms of Service](/terms/)
 
 Questions? Email **support@spilldabeans.com**.

@@ -18,5 +18,5 @@ You can delete your account and its data in the app: **Settings → Privacy & Da
 
 ## Legal
 
-- [Privacy Policy](https://bennyz321.github.io/breadcrumb-docs/privacy/)
-- [Terms of Service](https://bennyz321.github.io/breadcrumb-docs/tos/)
+- [Privacy Policy](/privacy/)
+- [Terms of Service](/terms/)
