@@ -94,8 +94,9 @@ body.landing {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: var(--space-xl) var(--space-xl) 0;
-  overflow: hidden; /* the outer beans hang off the edges, as on the welcome screen; clip, never scroll sideways */
+  /* viewport-fit=cover: keep content clear of the notch / rounded corners (env() is 0 elsewhere). */
+  padding: calc(var(--space-xl) + env(safe-area-inset-top)) max(var(--space-xl), env(safe-area-inset-right)) 0 max(var(--space-xl), env(safe-area-inset-left));
+  overflow: hidden; /* belt and braces: never scroll sideways */
 }
 
 /* The wordmark PNG has transparent margins; pull them in so the lettering sits snug. */
@@ -140,9 +141,11 @@ body.landing {
   border-radius: var(--radius-pill);
   font-family: var(--font-body);
   font-weight: 800;
-  font-size: 18px;
+  /* OCType.button is 18; step down a touch on the narrowest phones so the label stays on one line. */
+  font-size: clamp(16px, 4.6vw, 18px);
   line-height: 1.2;
   text-decoration: none;
+  text-wrap: balance;
 }
 .cta--live {
   background: var(--dark-button);
@@ -157,13 +160,19 @@ body.landing {
   border: 1px solid var(--hairline);
 }
 
-/* Bean trio: offsets and sizes from the welcome screen's 393pt frame. */
+/*
+ * Bean trio: offsets and sizes from the welcome screen's 393pt frame.
+ * The trio's visible art (alpha bounding boxes) spans -9.4% .. 112.8% of the
+ * box width, i.e. 1.222 box-widths, centred 1.7% right of the box centre.
+ * Phones: size the box so the whole trio (every face) fits inside the
+ * viewport with 12px either side, and shift it back to centre.
+ */
 .beans {
   position: relative;
-  width: min(100vw, 560px);
+  width: min(calc((100vw - 24px) / 1.222), 560px);
   aspect-ratio: 393 / 268;
-  /* Any spare viewport height goes above the trio, so the beans always stand on the footer edge. */
-  margin-top: auto;
+  margin-top: 0;
+  transform: translateX(-1.7%);
 }
 .bean {
   position: absolute;
@@ -177,7 +186,7 @@ body.landing {
   position: relative;
   background: #fff;
   border-top: 1px solid var(--hairline);
-  padding: var(--space-xl) var(--space-xl) calc(var(--space-xl) + env(safe-area-inset-bottom));
+  padding: var(--space-xl) max(var(--space-xl), env(safe-area-inset-right)) calc(var(--space-xl) + env(safe-area-inset-bottom)) max(var(--space-xl), env(safe-area-inset-left));
 }
 .site-foot__links {
   display: flex;
@@ -201,8 +210,16 @@ body.landing {
   text-underline-offset: 4px;
 }
 
+/* Phones: centre the stack so spare height is shared above the wordmark and below the beans,
+   instead of opening one big gap between the CTA and the trio. */
+@media (max-width: 899px) {
+  .hero { justify-content: center; }
+  .hero__cta { margin-bottom: var(--space-md); }
+}
+
 @media (min-width: 900px) {
-  .hero { padding-top: var(--space-xxl); }
-  .beans { width: 620px; }
+  .hero { padding-top: calc(var(--space-xxl) + env(safe-area-inset-top)); }
+  /* Desktop: approved v1 layout; spare height goes above the trio so it stands on the footer edge. */
+  .beans { width: 620px; margin-top: auto; transform: none; }
   .blob--mint { top: 220px; }
 }
