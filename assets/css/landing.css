@@ -219,9 +219,20 @@ body.landing {
   .beans { margin-top: auto; }
 }
 
+/*
+ * Desktop (Ben, task_1791398183048_98568680): the whole page fits one screen. Every vertical
+ * size scales with viewport height, so wordmark, tagline, CTA, beans and footer links are all
+ * visible without scrolling at 1280x720 and up. The beans grow fastest, taking up spare height on
+ * tall screens; any remainder goes between the CTA and the beans, which stand on the footer edge.
+ */
 @media (min-width: 900px) {
-  .hero { padding-top: calc(var(--space-xxl) + env(safe-area-inset-top)); }
-  /* Desktop: approved v1 layout; spare height goes above the trio so it stands on the footer edge. */
-  .beans { width: 620px; margin-top: auto; transform: none; }
+  .hero { padding-top: calc(clamp(12px, 3vh, 40px) + env(safe-area-inset-top)); }
+  .hero__title { --wm: clamp(220px, 36vh, 440px); }
+  .hero__tagline { font-size: clamp(24px, 4.4vh, 48px); }
+  .hero__cta { margin: clamp(12px, 2.4vh, 32px) 0; }
+  /* 74vh - 187px equals 48vh at 720px tall and grows faster above it, so on tall screens the
+     trio absorbs the spare height instead of leaving a void under the CTA (~24px slack left). */
+  .beans { width: clamp(300px, calc(74vh - 187px), 760px); margin-top: auto; transform: none; }
+  .site-foot { padding-top: clamp(12px, 2vh, 24px); padding-bottom: calc(clamp(12px, 2vh, 24px) + env(safe-area-inset-bottom)); }
   .blob--mint { top: 220px; }
 }
