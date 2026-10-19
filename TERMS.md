@@ -7,7 +7,7 @@ permalink: /terms/
 # Spill Da Beans Terms of Service
 
 **Effective date:** 2026-10-05
-**Last updated:** 2026-10-06
+**Last updated:** 2026-10-19
 
 These Terms are an agreement between you and Spill Da Beans ("we", "us"), the operator of the app, and govern your use of it. By creating an account or using the app you agree to them. If you don't agree, please don't use Spill Da Beans.
 
@@ -39,7 +39,8 @@ You own the photos and text you post to Spill Da Beans. By spilling a bean you g
 You are responsible for the content you post. Do not post anything that:
 - you don't have the right to share
 - infringes someone else's copyright, trademark, or other rights
-- is sexually explicit or pornographic, or sexualizes minors in any way
+- is sexually explicit or pornographic, contains nudity of any kind, or sexualizes minors in any way
+- is an intimate or sexual image or video of any person shared without their consent, including images that are AI-generated, synthetic or digitally altered ("deepfakes")
 - is hateful or discriminatory, including hate speech targeting people for their race, ethnicity, national origin, religion, sex, gender identity, sexual orientation, disability or other protected characteristic
 - harasses, bullies, threatens, intimidates, stalks or doxxes another person, or shares someone's private information without their permission
 - depicts or encourages violence, self-harm or dangerous acts, or is gratuitously graphic
@@ -49,9 +50,9 @@ You are responsible for the content you post. Do not post anything that:
 - is spam or unsolicited promotional content
 - is otherwise objectionable or prohibited by Apple's App Store guidelines
 
-**We have zero tolerance for objectionable content and abusive users.** We remove content that violates these Terms and remove users who post it or abuse others from Spill Da Beans.
+**We have zero tolerance for objectionable content and abusive users.** We remove content that violates these Terms and remove users who post it or abuse others from Spill Da Beans. We may use automated tools to detect content that breaks these rules, and we preserve evidence where the law requires.
 
-You can report a bean or block another user from the bean's menu. Reported beans are hidden while we review them. Blocking someone removes them from your Pod, and neither of you will see the other's beans.
+You can report a bean or block another user from the bean's menu. To report a user's profile or profile photo, email support@spilldabeans.com. Reported beans are hidden while we review them, and we review reports of content that breaks these rules within 24 hours. Blocking someone removes them from your Pod, and neither of you will see the other's beans.
 
 ## 5. Acceptable use
 
