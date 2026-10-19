@@ -7,7 +7,7 @@ permalink: /privacy/
 # Spill Da Beans Privacy Policy
 
 **Effective date:** 2026-10-05
-**Last updated:** 2026-10-06
+**Last updated:** 2026-10-19
 
 This Privacy Policy explains what information Spill Da Beans collects, how we use it, and the choices you have. We wrote it in plain language so an App Store reviewer or any user can understand it without a lawyer.
 
@@ -71,6 +71,7 @@ We use your information to run the app:
 - Showing your beans to your Pod
 - Delivering push notifications you opted into, for example when someone sends you a friend request
 - Reviewing reports and enforcing blocks to keep the app safe (reports, and any details you add, are seen by our moderation team)
+- Automatically checking uploaded photos for sexual or abusive content
 
 We do not use your information for advertising, profiling, or any purpose unrelated to running the app.
 
@@ -86,6 +87,7 @@ Your content and identifiers are handled by the following service providers unde
 | Resend | Sign-in emails | Your email address and the code |
 | Mapbox | Map display; optional anonymous map usage data (off by default) | The map area and your location while the map is open; anonymous map usage data only if you turn it on |
 | Google (Places) | Place photos | Only which place is being looked up; no account data and no location |
+| Google (Cloud Vision) | Automated safety check of uploaded photos | Each bean photo and profile photo you upload, without your name or account details |
 | Cloudflare | DNS and email-routing records for spilldabeans.com | Domain and email-routing records |
 
 These providers are contractually limited to using your data only to provide their service to us.
