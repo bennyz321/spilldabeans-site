@@ -7,7 +7,7 @@ permalink: /privacy/
 # Spill Da Beans Privacy Policy
 
 **Effective date:** 2026-10-05
-**Last updated:** 2026-10-19
+**Last updated:** 2026-10-27
 
 This Privacy Policy explains what information Spill Da Beans collects, how we use it, and the choices you have. We wrote it in plain language so an App Store reviewer or any user can understand it without a lawyer.
 
@@ -17,7 +17,7 @@ If you have questions, contact us at **support@spilldabeans.com**.
 
 ## 1. Who we are
 
-Spill Da Beans is an iOS app for recommending places to your friends. You "spill a bean" to recommend a place: you choose the place and can add a photo, a short note (up to 280 characters) and quick tags. Beans are positive recommendations only; the app has no ratings. Your friends in the app are your "Pod." Your beans are shared with your Pod. You can see your Pod's beans in a feed and on a map of nearby places, and you can report a bean or block another user. The app is operated by Spill Da Beans ("we", "us"), which is responsible for your information (contact: support@spilldabeans.com).
+Spill Da Beans is an iOS app for recommending places to your friends. You "spill a bean" to recommend a place: you choose the place and can add a photo, a short note (up to 280 characters) and quick tags. Beans are positive recommendations only; the app has no ratings. Your friends in the app are your "Jar." Your beans are shared with your Jar. You can see your Jar's beans in a feed and on a map of nearby places, and you can report a bean or block another user. The app is operated by Spill Da Beans ("we", "us"), which is responsible for your information (contact: support@spilldabeans.com).
 
 ## 2. Information we collect
 
@@ -31,7 +31,7 @@ You control whether to grant Contacts access. We only read contacts at the momen
 
 ### 2.2 Location
 
-With your permission, and only while you are using the app, we use your device's precise location to center the map, show nearby places and suggest the place you are at. To do this, your location or the map area you are viewing is sent to our servers and to our map providers (Apple and Mapbox). We do not collect background location. When you spill a bean, we store the location of the place you chose. If you spill a bean at your current spot or a spot you name yourself, that place's location comes from your device.
+With your permission, and only while you are using the app, we use your device's precise location to center the map, show nearby places and suggest the place you are at. To do this, your location or the map area you are viewing is sent to our servers and to our map providers (Apple and Mapbox). We do not collect background location. When you spill a bean, we store the location of the place you chose.
 
 You control whether to grant Location access. You can revoke access in iOS Settings at any time.
 
@@ -46,7 +46,7 @@ When you spill a bean you choose to upload:
 - an optional What to order note
 - optional text notes
 
-**Your photo becomes the picture for the place.** When you add a photo to a bean, Spill Da Beans uses that photo as the public picture of the place, visible to everyone who uses the app. It replaces the place's current picture, including one from another source, and a newer bean photo of the same place can replace it in turn. Only the photo is shared this way. Your bean itself is shown to your Pod. Using the photo as a place picture does not add your note, tags or attribution as its author to that picture. We can also access beans for support and moderation as described below. A photo used as a place picture stays on the place after you delete the bean, until a newer photo replaces it. If you delete your account, your photos stop being used as place pictures. You can ask us to remove it by emailing support@spilldabeans.com.
+**Your photo becomes the picture for the place.** When you add a photo to a bean, Spill Da Beans uses that photo as the public picture of the place, visible to everyone who uses the app. It replaces the place's current picture, including one from another source, and a newer bean photo of the same place can replace it in turn. Only the photo is shared this way. Your bean itself is shown to your Jar. Using the photo as a place picture does not add your note, tags or attribution as its author to that picture. We can also access beans for support and moderation as described below. A photo used as a place picture stays on the place after you delete the bean, until a newer photo replaces it. If you delete your account, your photos stop being used as place pictures. You can ask us to remove it by emailing support@spilldabeans.com.
 
 This is your content. You can delete any bean at any time from within the app, which removes the bean and its photo from our server. Cached copies of the photo may remain available for a short time. If the photo is being used as a picture of the place, that picture stays on the place (see above).
 
@@ -61,14 +61,14 @@ To sign you in we use Sign in with Apple, your phone number (one-time text code)
 - your Apple ID identifier and, if you allow it, the name and email Apple shares (which may be a private relay address); or your phone number and a one-way code of it, used so friends who have your number can find you; or your email address
 - a push-notification token, only if you allow notifications
 
-You choose a display name when you sign up, and your Pod sees it.
+You choose a display name when you sign up, and your Jar sees it.
 
 ## 3. How we use your information
 
 We use your information to run the app:
 - Authenticating you and keeping your session secure
 - Letting people who have your phone number find you, letting you find them, and handling friend requests
-- Showing your beans to your Pod
+- Showing your beans to your Jar
 - Delivering push notifications you opted into, for example when someone sends you a friend request
 - Reviewing reports and enforcing blocks to keep the app safe (reports, and any details you add, are seen by our moderation team)
 - Automatically checking uploaded photos for sexual or abusive content
@@ -110,7 +110,7 @@ Your data is stored in the United States on infrastructure operated by the provi
 
 You can, at any time:
 - **Delete any individual bean** from the bean's menu in the feed or from the place sheet on the map.
-- **Delete your entire account** in the app from Settings, then Delete Account. Deletion removes your profile (name, username, photo and bio), your beans and their photos, your Want to Spill list, your Pod connections, your contact codes and your sign-in record. It cannot be undone. Your photos also stop being used as place pictures. We keep the deletion and moderation records described above. Photo removal is processed separately, and cached copies may remain available for a time after deletion.
+- **Delete your entire account** in the app from Settings, then Delete Account. Deletion removes your profile (name, username, photo and bio), your beans and their photos, your Want to Spill list, your Jar connections, your contact codes and your sign-in record. It cannot be undone. Your photos also stop being used as place pictures. We keep the deletion and moderation records described above. Photo removal is processed separately, and cached copies may remain available for a time after deletion.
 - **Revoke iOS permissions** (Contacts, Location, Camera, Photos, Notifications) at any time in iOS Settings -> Spill Da Beans. Revoking a permission disables the feature that requires it but does not delete past data; use account deletion for that.
 - **Ask us a question** about your data at support@spilldabeans.com.
 
