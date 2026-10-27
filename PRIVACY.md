@@ -7,7 +7,7 @@ permalink: /privacy/
 # Spill Da Beans Privacy Policy
 
 **Effective date:** 2026-10-05
-**Last updated:** 2026-10-19
+**Last updated:** 2026-10-27
 
 This Privacy Policy explains what information Spill Da Beans collects, how we use it, and the choices you have. We wrote it in plain language so an App Store reviewer or any user can understand it without a lawyer.
 
@@ -31,7 +31,7 @@ You control whether to grant Contacts access. We only read contacts at the momen
 
 ### 2.2 Location
 
-With your permission, and only while you are using the app, we use your device's precise location to center the map, show nearby places and suggest the place you are at. To do this, your location or the map area you are viewing is sent to our servers and to our map providers (Apple and Mapbox). We do not collect background location. When you spill a bean, we store the location of the place you chose. If you spill a bean at your current spot or a spot you name yourself, that place's location comes from your device.
+With your permission, and only while you are using the app, we use your device's precise location to center the map, show nearby places and suggest the place you are at. To do this, your location or the map area you are viewing is sent to our servers and to our map providers (Apple and Mapbox). We do not collect background location. When you spill a bean, we store the location of the place you chose.
 
 You control whether to grant Location access. You can revoke access in iOS Settings at any time.
 

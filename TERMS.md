@@ -17,7 +17,7 @@ Questions: **support@spilldabeans.com**.
 
 ## 1. What Spill Da Beans is
 
-Spill Da Beans is an iOS app for recommending places to your friends. You "spill a bean" to recommend a place: you choose the place and can add a photo, a short note (up to 280 characters) and quick tags. Beans are positive recommendations only; the app has no ratings. Your friends in the app are your "Pod." Your beans are shared with your Pod. You can see your Pod's beans in a feed and on a map of nearby places, and you can report a bean or block another user.
+Spill Da Beans is an iOS app for recommending places to your friends. You "spill a bean" to recommend a place: you choose the place and can add a photo, a short note (up to 280 characters) and quick tags. Beans are positive recommendations only; the app has no ratings. Your friends in the app are your "Jar." Your beans are shared with your Jar. You can see your Jar's beans in a feed and on a map of nearby places, and you can report a bean or block another user.
 
 ## 2. Who can use Spill Da Beans
 
@@ -34,7 +34,7 @@ You can delete your account at any time in the app from Settings, then Delete Ac
 
 ## 4. Your content
 
-You own the photos and text you post to Spill Da Beans. By spilling a bean you grant us a limited, non-exclusive, royalty-free license to host, display, and distribute that content within the app to your Pod. For photos, the license also lets us use the photo as a picture of the place it was taken at, shown to all users of the app, and to keep showing it there after you delete the bean, until a newer photo replaces it or you delete your account. This permission to use a place picture does not include adding your note, tags or attribution as the bean's author to that picture. Your bean is shown to your Pod; your profile information is also available to other signed-in users. Otherwise the license ends when you delete the bean or your account. You can ask us to remove a place picture you took by emailing support@spilldabeans.com.
+You own the photos and text you post to Spill Da Beans. By spilling a bean you grant us a limited, non-exclusive, royalty-free license to host, display, and distribute that content within the app to your Jar. For photos, the license also lets us use the photo as a picture of the place it was taken at, shown to all users of the app, and to keep showing it there after you delete the bean, until a newer photo replaces it or you delete your account. This permission to use a place picture does not include adding your note, tags or attribution as the bean's author to that picture. Your bean is shown to your Jar; your profile information is also available to other signed-in users. Otherwise the license ends when you delete the bean or your account. You can ask us to remove a place picture you took by emailing support@spilldabeans.com.
 
 You are responsible for the content you post. Do not post anything that:
 - you don't have the right to share
@@ -52,7 +52,7 @@ You are responsible for the content you post. Do not post anything that:
 
 **We have zero tolerance for objectionable content and abusive users.** We remove content that violates these Terms and remove users who post it or abuse others from Spill Da Beans. We may use automated tools to detect content that breaks these rules, and we preserve evidence where the law requires.
 
-You can report a bean or block another user from the bean's menu. To report a user's profile or profile photo, email support@spilldabeans.com. Reported beans are hidden while we review them, and we review reports of content that breaks these rules within 24 hours. Blocking someone removes them from your Pod, and neither of you will see the other's beans.
+You can report a bean or block another user from the bean's menu. To report a user's profile or profile photo, email support@spilldabeans.com. Reported beans are hidden while we review them, and we review reports of content that breaks these rules within 24 hours. Blocking someone removes them from your Jar, and neither of you will see the other's beans.
 
 ## 5. Acceptable use
 
